@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewportはレスポンシブのコーディングに必要 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Coffee</title>
+    <!-- リセットCSS -->
+    <link href="css/destyle.css" rel="stylesheet" />
+    <!-- スタイルCSS -->
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <h1 class="logo">
+            <a href="#"><img src="images/logo.png" alt="SKY COFFEE"></a>
+        </h1>
+    </header>
+    <!-- /header -->
+
+    <!-- pictureタグ⇒ブラウザ幅が768px以上の場合はpc_main-visual.jpgを表示
+        それ以外の場合はsp_main-visual.jpgを表示 -->
+    <!-- main-visual -->
+    <div class="main-visual">
+        <picture>
+            <source media="(768px)" srcset="images/pc_main-visual.png">
+            <img src="images/sp_main-visual.jpg" alt="複数の青いカップのコーヒー" >
+        </picture>
+    </div>  
+    <!-- /main-visual -->
+
+</body>
+</html>
